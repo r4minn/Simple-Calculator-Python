@@ -1,27 +1,36 @@
 
-print("\u001b[35m                                   ▄▄\u001b[35m")
-print("\u001b[35m                                   ██\u001b[35m")
-print("\u001b[35m▀███▄███ ▄█▀██▄ ▀████████▄█████▄ ▀███ ▀████████▄\u001b[35m")
-print("\u001b[35m  ██▀ ▀▀██   ██   ██    ██    ██   ██   ██    ██\u001b[35m")
-print("\u001b[35m  ██     ▄█████   ██    ██    ██   ██   ██    ██\u001b[35m")
-print("\u001b[35m  ██    ██   ██   ██    ██    ██   ██   ██    ██\u001b[35m")
-print("\u001b[35m▄████▄  ▀████▀██▄████  ████  ████▄████▄████  ████▄\u001b[35m")
-print("                                                  ")
+print("\033[96m                                   ▄▄\033[96m")
+print("\033[96m                                   ██\033[96m")
+print("\033[96m▀███▄███ ▄█▀██▄ ▀████████▄█████▄ ▀███ ▀████████▄\033[96m")
+print("\033[96m  ██▀ ▀▀██   ██   ██    ██    ██   ██   ██    ██\033[96m")
+print("\033[96m  ██     ▄█████   ██    ██    ██   ██   ██    ██\033[96m")
+print("\033[96m  ██    ██   ██   ██    ██    ██   ██   ██    ██\033[96m")
+print("\033[96m▄████▄  ▀████▀██▄████  ████  ████▄████▄████  ████▄\033[96m")
+print("                                                 by ramin")
 
-num1 = input("Enter the first number: ")
-num2 = input("Enter the second number: ")
+print("Operators: +, -, /, *, **")
+print()
 
-resultat = float(num1) + float(num2)
-resultat2 = float(num1) - float(num2)
-resultat3 = float(num1) * float(num2)
-resultat4 = float(num1) / float(num2)
+a = float(input("Enter the first number: "))
+op = input("Enter operation: ")
+b = float(input("Enter the second number: "))
 
-print(num1 + " + " + num2 + " = " + str(resultat))
-print(num1 + " - " + num2 + " = " + str(resultat2))
-print(num1 + " * " + num2 + " = " + str(resultat3))
-print(num1 + " / " + num2 + " = " + str(resultat4))
 
-print("                                                  ")
-print("Correct?") ; helpful = input("Y/N ")
+if op == "+":
+    print(a + b)
+elif op == "-":
+    print(a - b)
+elif op == "*":
+    print(a * b)
+elif op == "/":
+    c = (a / b) if b != 0 else print("Can't divide with zero")
+    print(c)
+elif op == "**":
+    print(a ** b)
+else:
+    print("Invalid operator")
+
+print("")
+paa = input("Press ENTER to exit")
 
 
